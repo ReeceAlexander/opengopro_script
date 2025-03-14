@@ -130,7 +130,7 @@ class WirelessGoPro(GoProBase[WirelessApi], GoProWirelessInterface):
         target: Pattern | None = None,
         wifi_interface: str | None = None,
         sudo_password: str | None = None,
-        enable_wifi: bool = True,
+        enable_wifi: bool = False,
         **kwargs: Any,
     ) -> None:
         GoProBase.__init__(self, **kwargs)
